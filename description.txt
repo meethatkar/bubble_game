@@ -1,0 +1,4 @@
+how to play:
+see the number show in hit and click on that bubbles to score points.
+eg: if 1 number is show in hit, click on bubble in which 1 is written.
+everytime correct hit will increase the score by 10 and will refresh the hit and bubbles

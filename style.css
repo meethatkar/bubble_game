@@ -1,0 +1,78 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+#main{
+    background-color: rgb(127, 255, 212);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#panel{
+    height: 80%;
+    width: 80%;
+    background-color: #D47FFF;
+    border: 1.5px solid black;
+    overflow:hidden;
+}
+#ptop{
+    height: 85px;
+    width: 100%;
+    background-color: #FFD47F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 240px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.elem h2{
+    font-weight: 549;
+}
+.box{
+    background-color: white;
+    font-weight: 450;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 3px;
+}
+#pbtm{
+    height: calc(100% - 85px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pbtm h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+.bubble:hover{
+    background-color: rgb(184, 182, 182) ;
+    cursor: pointer;
+}
+.bubble{
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 10px;
+}
