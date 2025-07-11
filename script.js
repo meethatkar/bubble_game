@@ -3,10 +3,26 @@ var hitrn;      //bhar declare kiya hai cause we need to use it in "click" event
 function display_bubble(){
     var clutter = "";
     var i=0;
-    for(i=1; i<=176; i++){
+    if(window.innerWidth<=600){
+        for(i=1; i<=34; i++){
         let rn = Math.floor(Math.random()*10);  /* Math.floor() --> removes decimal ; Math.random()*10 --> generates (1-10) random number */
         clutter +=  `<div class="bubble">${rn}</div>`;      
         /* backtick (``) use kiya hai so, humlog dynamic value string ke ander likh sakte hai using this --> ${var} */
+    }
+    }
+    else if(window.innerWidth>600 && window.innerWidth<=900){
+        for(i=1; i<=90; i++){
+        let rn = Math.floor(Math.random()*10);  /* Math.floor() --> removes decimal ; Math.random()*10 --> generates (1-10) random number */
+        clutter +=  `<div class="bubble">${rn}</div>`;      
+        /* backtick (``) use kiya hai so, humlog dynamic value string ke ander likh sakte hai using this --> ${var} */
+    }
+    }
+    else{
+        for(i=1; i<=176; i++){
+        let rn = Math.floor(Math.random()*10);  /* Math.floor() --> removes decimal ; Math.random()*10 --> generates (1-10) random number */
+        clutter +=  `<div class="bubble">${rn}</div>`;      
+        /* backtick (``) use kiya hai so, humlog dynamic value string ke ander likh sakte hai using this --> ${var} */
+    }
     }
     document.querySelector("#pbtm").innerHTML = clutter;
 }

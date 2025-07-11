@@ -39,7 +39,7 @@ html,body{
     gap:10px;
 }
 .elem h2{
-    font-weight: 549;
+    font-weight: 500;
 }
 .box{
     background-color: white;
@@ -75,4 +75,26 @@ html,body{
     justify-content: center;
     color: black;
     margin: 10px;
+}
+
+@media (max-width:600px) {
+    #ptop{
+        padding: 0px 20px;
+    }
+    .elem>h2{
+        font-size: 3vh;
+        font-weight: 500;
+    }
+    .box{
+        font-size: 20px;
+    }
+    .bubble{
+        
+    }
+}
+
+@media (max-width: 900px) {
+    #ptop{
+        padding: 0px 50px;
+    }
 }
