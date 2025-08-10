@@ -58,8 +58,17 @@ function scoreadd(){
 
 
 hit();  //hit div mai new value display karega
-timer();        //time div mai new value display karega
 display_bubble();       //new bubbles with new values show karega. 
+
+document.querySelector("#play").addEventListener("click",()=>{
+    document.querySelector("#panel").style.opacity = "1";
+    document.querySelector("#instructions").style.opacity = "0";
+    document.querySelector("#instructions").style.zIndex = "-1";
+    setTimeout(() => {
+        timer();        //time div mai new value display karega        
+    }, 500);
+})
+
 document.querySelector("#pbtm").addEventListener("click",function(details){
     var elem = Number(details.target.innerHTML);
     console.log(elem);
