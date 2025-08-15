@@ -10,7 +10,7 @@ html,body{
     font-family: sans-serif;
 }
 #main{
-    background-color: rgb(127, 255, 212);
+    background-color: #b6f3ff;
     height: 100%;
     width: 100%;
     display: flex;
@@ -26,7 +26,7 @@ html,body{
     border-radius: 20px;
     border: 2px solid #333;
     width: 70%;
-    background-color: #7FEAFF;
+    background-color: #caf0f8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,9 +118,12 @@ html,body{
 @media (max-width:600px) {
     #ptop{
         padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
     .elem>h2{
-        font-size: 3vh;
+        font-size: 2.5vh;
         font-weight: 500;
     }
     .box{
